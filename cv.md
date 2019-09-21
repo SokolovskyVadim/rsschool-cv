@@ -23,7 +23,7 @@ Some code examples:
   
 **HTML**  
   
-```<img class="rot" src="https://cdn.iconscout.com/icon/free/png-256/grinning-face-smile-emoji-happy-37705.png">
+```<img class="rot" src="smile.png">
 <div class="cards">
   <div class="card">
     <h2><a href="#">Title</a></h2>
