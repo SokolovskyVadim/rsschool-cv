@@ -23,7 +23,8 @@ Some code examples:
   
 **HTML**  
   
-```<img class="rot" src="smile.png">
+```
+<img class="rot" src="https://cdn.iconscout.com/icon/free/png-256/grinning-face-smile-emoji-happy-37705.png">
 <div class="cards">
   <div class="card">
     <h2><a href="#">Title</a></h2>
@@ -50,7 +51,8 @@ Some code examples:
   
 **CSS**  
   
-```img.rot {
+```
+img.rot {
   animation: 1s linear 0s normal none infinite running rot;
   -webkit-animation: 1s linear 0s normal none infinite running rot;
   width: 100px;
