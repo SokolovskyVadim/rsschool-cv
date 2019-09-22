@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My CV. Sakalouski Vadim.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="header-title">My resume</h1>
+        <hr>
+    </header>
+    
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">About me</h2>
+            <hr>
+			<p class="section-description">
+				Hello my name is <span class="section-description--bolt">Vadim Sakalouski</span> and I’m a junior front end developer. 
+			</p>
+			<img class="section-img" src="cv.jpg" alt="CV photo">
+			<p class="section-description">
+				    My contact data: 
+				<i class="section-description--italic">
+				    My contacts - phone: +37544-702-47-05, email: sokolovsky.v.a@gmail.com.
+				</i>
+			</p>
+        </section>
+        <section class="section">
+            <h2 class="section-title">My goals</h2>
+            <hr>
+			<p class="section-description">
+				My goal is to be a great developer! I very like what I do and this is important thing. I really like to learn something new, sometimes I can study for 12 hours or searching for the answers to different questions.
+			</p>
+		</section>
+		<section class="section">
+            <h2 class="section-title">Skills and experience</h2>
+            <hr>
+			<p class="section-description">
+                I have experience with HTML5, CSS3, JavaScript, jQuery, Bootstrap, Materialize, and little bit with WordPress, PHP.
+			</p>
+			<p class="section-description">
+				Check my work's 
+				<a class="section-link" href="https://github.com/SokolovskyVadim/SokolovskyVadim.github.io">
+					here
+                </a>.
+                Check my homework on JS
+                <a class="section-link" href="https://repl.it/repls">
+					here
+                </a>.
+			</p>
+        </section>
+        <section class="section">
+            <h2 class="section-title">Code examples</h2>
+            <hr>
+			<h3 class="code-container-title">
+                Some code examples:
+			</h3>
+			<div class="code-container">
+				<div class="code-container-item">
+					<h4 class="item-title section-description--bolt">HTML</h4>
+					<code class="item-code">
+						<pre>
+&lt;img class="rot" src="https://cdn.iconscout.com/icon/free/png-256/grinning-face-smile-emoji-happy-37705.png"&gt;
+&lt;div class="cards"&gt;
+  &lt;div class="card"&gt;
+    &lt;h2&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;Some article description stuff.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;h2&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;Some article description stuff.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;h2&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;Some article description stuff.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;h2&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;Some article description stuff.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;h2&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;Some article description stuff.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</code>
+					</div>
+					<div class="code-container-item">
+						<h4 class="item-title section-description--bolt">CSS</h4>
+						<code class="item-code">
+							<pre>
+img.rot {
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 1s linear 0s normal none infinite running rot;
+  width: 100px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #666;
+  overflow: hidden;
+}
+.cards {
+  display: flex;
+}
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+  transition: 0.2s;
+}
+.card:not(:first-child) {
+  margin-left: -2rem;
+}
+.card:not(:last-child):hover,
+.card:not(:last-child):focus-within {
+  transform: translateY(-1rem);
+  ~ .card {
+    transform: translateX(2rem);
+  }
+}
+
+							</pre>
+						</code>
+                    </div>
+                    <div class="code-container-item">
+						<h4 class="item-title section-description--bolt">JS</h4>
+						<code class="item-code">
+							<pre>
+'use strict';
+function createSVG () {
+  // Обертка
+  var clockWrap = document.createElement('div');
+  var clockWrapWidth = clockWrap.style.width = 300 +'px'; //Устанавливаем размер обертки
+  var clockWrapHeight = clockWrap.style.height = 300 +'px'; //Устанавливаем размер обертки
+  clockWrap.className = 'clock';
+
+  document.body.appendChild(clockWrap);
+
+  // Сам элемент SVG
+  var svgElem = document.createElementNS ('http://www.w3.org/2000/svg', 'svg');
+  svgElem.setAttribute('width', clockWrapWidth);
+  svgElem.setAttribute('height', clockWrapHeight);
+  svgElem.id = 'clock';
+  clockWrap.appendChild(svgElem); 
+
+  var clock = document.getElementById('clock');
+
+  // Константы
+  const clockWidth = parseInt(clock.getAttribute('width'));
+  const clockHeight = parseInt(clock.getAttribute('height'));
+  const clockRadius = parseFloat(clockHeight/2);
+  const clockCenterX = clockWidth/2;
+  const ClockCenterY = clockHeight/2;
+
+  // Создаем циферблат
+  var clockCircle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  clockCircle.setAttribute('fill','#fccb66');
+  clockCircle.setAttribute('cx',clockCenterX);
+  clockCircle.setAttribute('cy',ClockCenterY);
+  clockCircle.setAttribute('r',clockRadius);
+
+  clock.appendChild(clockCircle);
+
+  // Создаем цифры на часах
+  for(var i = 1; i <= 12; i++) {
+
+    // Создаем обертку для цифр и текста
+    var group = document.createElementNS('http://www.w3.org/2000/svg','g');
+    group.setAttribute('class','group')
+    clock.appendChild(group);
+    
+    // Создаем часовые деления
+    var clockNum = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    var angle = parseFloat(i*30)/180*Math.PI;
+
+    clockNum.setAttribute('fill','#46b483');
+    clockNum.setAttribute('cx', clockCenterX+(clockRadius-clockWidth/8)*Math.sin(angle)); 
+    clockNum.setAttribute('cy', ClockCenterY-(clockRadius-clockWidth/8)*Math.cos(angle)); 
+    clockNum.setAttribute('r',clockRadius/8);
+
+    group.appendChild(clockNum);
+
+    var clockNumCenterX = clockNum.getAttribute('cx');
+    var clockNumCenterY = clockNum.getAttribute('cy');
+    var clockNumRadius = clockNum.getAttribute('r');
+    
+    // Создаем цифры начасах
+    var text = document.createElementNS('http://www.w3.org/2000/svg','text');
+    text.setAttribute('x', clockNumCenterX);
+    text.setAttribute('y', Number(clockNumCenterY)+clockNumRadius/2);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('font-size', clockNumRadius*1.55);
+
+    text.textContent = [i];
+    
+    group.appendChild(text);
+  }
+
+  // Создаем часовую стрелку
+  var lineHour = document.createElementNS('http://www.w3.org/2000/svg','line');
+  lineHour.setAttribute('stroke','black');
+  lineHour.setAttribute('stroke-width', clockRadius/35);
+  lineHour.setAttribute('x1',clockCenterX);
+  lineHour.setAttribute('y1',ClockCenterY*1.1);
+  lineHour.setAttribute('x2',clockCenterX);
+  lineHour.setAttribute('y2',ClockCenterY*0.4);
+
+  lineHour.id = 'hand-hour';
+
+  clock.appendChild(lineHour);
+
+  // Создаем минутную стрелку
+  var lineMin = document.createElementNS('http://www.w3.org/2000/svg','line');
+  lineMin.setAttribute('stroke','black');
+  lineMin.setAttribute('stroke-width',clockRadius/50);
+  lineMin.setAttribute('x1',clockCenterX);
+  lineMin.setAttribute('y1',ClockCenterY*1.1);
+  lineMin.setAttribute('x2',clockCenterX);
+  lineMin.setAttribute('y2',ClockCenterY*0.3);
+
+  lineMin.id = 'hand-min';
+
+  clock.appendChild(lineMin); 
+
+  // Создаем секундную стрелку
+  var lineSec = document.createElementNS('http://www.w3.org/2000/svg','line');
+  lineSec.setAttribute('stroke','black');
+  lineSec.setAttribute('stroke-width',clockRadius/83.33);
+  lineSec.setAttribute('x1',clockCenterX);
+  lineSec.setAttribute('y1',ClockCenterY*1.1);
+  lineSec.setAttribute('x2',clockCenterX);
+  lineSec.setAttribute('y2',ClockCenterY*0.15);
+
+  lineSec.id = 'hand-sec';
+
+  clock.appendChild(lineSec);
+  
+  // Показываем часы
+  var date = document.createElementNS('http://www.w3.org/2000/svg','text');
+  date.setAttribute('x', clockCenterX);
+  date.setAttribute('y', ClockCenterY-clockRadius/2.75);
+  date.setAttribute('text-anchor', 'middle');
+  date.setAttribute('font-size', clockRadius/5);
+  date.id = 'date';
+  
+  svgElem.appendChild(date);
+  
+  // Расставляем стрелки при загрузке часов
+  setHands();
+}
+createSVG();
+
+// Заводим часы
+function setHands() {
+  var dateTime = new Date();
+
+  var hour = dateTime.getHours();
+  var min = dateTime.getMinutes();
+  var sec = dateTime.getSeconds();
+  var msec = dateTime.getMilliseconds();
+  
+  var angleHour = (hour%12)/12*360+min/60*30;
+  var angleMin = min/60*360;
+  var angleSec = sec/60*360;
+
+  var clockCenterX = parseInt(document.getElementById('clock').getAttribute('width'))/2;
+  var clockCenterY = parseInt(document.getElementById('clock').getAttribute('height'))/2;
+
+  document.getElementById('date').textContent = dateTime.toLocaleTimeString();
+  document.getElementById('hand-hour').setAttribute('transform', 'rotate('+ angleHour +' '+clockCenterX+' '+clockCenterY+')');
+  document.getElementById('hand-min').setAttribute('transform', 'rotate('+ angleMin +' '+clockCenterX+' '+clockCenterY+')');
+  document.getElementById('hand-sec').setAttribute('transform', 'rotate('+ angleSec +' '+clockCenterX+' '+clockCenterY+')');
+}
+
+setInterval(function(){
+  setHands();
+},1000);
+
+							</pre>
+						</code>
+					</div>
+				</div>
+            </section>
+            <section class="section">
+				<h2 class="section-title">Education</h2>
+				<p class="section-description">
+					<div class="section-description">I studied and study right now in IT-academy.</div>  
+                    <div class="section-description section-description--bolt">i finished courses:</div>     
+                    <div class="section-description section-description--italic">Basics of web technology</div>    
+                    <div class="section-description section-description--italic">Course HTML, CSS, JavaScript, website development training (layout, coding)</div>     
+                    <div class="section-description section-description--bolt">And right now study on:</div>  
+                    <div class="section-description section-description--italic">JavaScript web application development</div>
+				</p>
+            </section>
+            <section class="section">
+				<h2 class="section-title">English level</h2>
+				<p class="section-description">
+					<div class="section-description">My english level is something in between intermediate and pre-intermediate. I'm often studied at various courses.</div>  
+				</p>
+			</section>
+    </main>
+    <footer class="container">
+        <p class="copy">&copy; 2019 made by Sakalouski Vadim</p>
+    </footer>
+</body>
+</html>
