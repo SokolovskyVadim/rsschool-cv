@@ -36,10 +36,9 @@ body {
 	font-weight: 700;
 }
 .code-container-title {
-	margin-bottom: 20px;
+	margin: 20px 0px;
 }
 .code-container-item {
-	width: 50%;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	padding: 20px;
